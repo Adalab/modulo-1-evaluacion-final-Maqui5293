@@ -119,16 +119,14 @@ html {
     margin-top: 10%;
     padding: 15px 24px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
 }
 
 .fotopapel {
-
     width: 100%;
     height: auto;
     display: block;
-
 }
 
 .footer {
@@ -138,12 +136,21 @@ html {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 30px;
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 .uno {
     color: #f0ebe5;
+
 }
 
 .dos {
@@ -176,6 +183,12 @@ html {
     object-fit: contain;
 }
 
+
+@media (max-width: 480px) {
+    .img-header {
+        max-width: 200px;
+    }
+}
 
 @media (max-width: 768px) {}
 

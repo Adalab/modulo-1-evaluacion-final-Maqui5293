@@ -13,20 +13,17 @@ html {
 
 .header {
     background-image: url(../public/recursos/header.jpg);
+    width: 100%;
+    height: 300px;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    width: 100%;
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
     z-index: 1;
+}
+
+.logo {
+    margin-left: 50px;
 }
 
 .burguer {
@@ -99,8 +96,10 @@ html {
 .fondonaranja {
     font-size: 12px;
     background-color: #ff975a;
+    padding-bottom: 30px;
     color: white
 }
+
 
 .caja5 {
     font-size: 12px;
@@ -123,17 +122,29 @@ html {
     cursor: pointer;
 }
 
-.fotopapel {
+
+.fondo {
     width: 100%;
-    height: auto;
-    display: block;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
+.baño {
+    width: 100%;
+    height: 300px;
+    background-image: url('../public/recursos/creando-espacios.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .footer {
     background-color: #0c474b;
-    color: white;
+    color: #f0ebe5;
     padding: 20px;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,6 +152,21 @@ html {
     text-align: center;
     gap: 30px;
     box-sizing: border-box;
+}
+
+
+.link1 a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #f0ebe5;
+}
+
+.link2 a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #f0ebe5;
 }
 
 ul {
@@ -183,13 +209,66 @@ ul {
     object-fit: contain;
 }
 
-
-@media (max-width: 480px) {
-    .img-header {
-        max-width: 200px;
-    }
+.header__list-hidden {
+    color: #0c474b;
+    display: flex;
+    font-size: 30px;
+    margin-top: -300px;
+    margin-left: 80px;
+    gap: 20px;
+    box-sizing: border-box;
 }
 
-@media (max-width: 768px) {}
+/* 
+.contenedor-cajas {
+    display: flex;
+    flex-direction: row;
+}
+ */
 
-@media (max-width: 1024px) {}
+
+
+@media (max-width: 480px) {
+
+    .header__list-hidden {
+        display: none;
+    }
+
+    /* 
+    .contenedor-cajas {
+        display: none;
+    }
+ */
+}
+
+@media (max-width: 768px) {
+
+
+    /* 
+    .header__list-hidden {
+        display: none;
+    }
+
+    .contenedor-cajas {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* .footer {
+        flex-direction: row; */
+
+}
+
+@media (max-width: 1024px) {
+
+    /*     .logo {
+        margin-left: 700px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+    } */
+
+
+}

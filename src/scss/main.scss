@@ -1,274 +1,297 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  overflow-x: hidden;
 }
 
-.header {
-    background-image: url(../public/recursos/header.jpg);
-    width: 100%;
-    height: 300px;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
+.cabecera {
+  background-image: url(../public/recursos/header.jpg);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
-.logo {
-    margin-left: 50px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4%;
 }
 
-.burguer {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 30px;
-    z-index: 1000;
+.header_burguer img {
+  display: none;
+  width: 20px;
 }
 
-.header-content {
+.header_contenido {
+  font-size: 14px;
+  color: #13413f;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.header_button {
+  background-color: #13413f;
+  color: white;
+  border: none;
+  margin-top: 10%;
+  padding: 15px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header_desktop_menu ul {
+  list-style-type: none;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 16px;
+  padding: 4%;
+}
+
+.contenedor_cajas {
+  background-color: #f0ebe5;
+}
+.caja1 {
+  font-size: 15px;
+  color: #0c474b;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.caja2 img {
+  padding: 20px;
+}
+
+.caja2 {
+  font-size: 12px;
+  color: #0c474b;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.caja3 img {
+  padding: 20px;
+}
+.caja3 {
+  font-size: 12px;
+  color: #0c474b;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.caja4 img {
+  padding: 20px;
+}
+.caja4 {
+  font-size: 12px;
+  color: #0c474b;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.contenedor_naranja {
+  background-color: #ff975a;
+  padding: 20px;
+}
+
+.caja5 a {
+  font-size: 12px;
+  color: white;
+}
+.caja5 img {
+  padding: 20px;
+}
+.caja5 {
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+}
+
+.contenedor_caja6 {
+  background-color: #f0ebe5;
+}
+.caja6 {
+  font-size: 12px;
+  color: #0c474b;
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.buttondos {
+  background-color: #13413f;
+  color: white;
+  border: none;
+  margin-top: 10%;
+  padding: 15px 24px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.baño {
+  width: 100%;
+  height: 300px;
+  background-image: url("../public/recursos/creando-espacios.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-color: #0c474b;
+}
+
+.bloque1 {
+  color: #f0ebe5;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.bloque2 {
+  color: #f0ebe5;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.bloque3 {
+  color: #f0ebe5;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.bloque3 ul {
+  list-style: none;
+}
+
+.link1 a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #f0ebe5;
+}
+
+.link2 a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #f0ebe5;
+}
+
+.linkedin {
+  width: 24px;
+  height: 26px;
+  margin: 11px;
+  object-fit: contain;
+}
+
+.insta {
+  width: 24px;
+  height: 26px;
+  margin: 11px;
+  object-fit: contain;
+}
+
+.twitter {
+  width: 24px;
+  height: 26px;
+  margin: 11px;
+  object-fit: contain;
+}
+
+@media (max-width: 420px) {
+  .header_desktop_menu ul {
+    display: none;
+  }
+
+  .header_burguer img {
+    display: block;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .header_logo {
+    max-width: 60%;
+    margin-left: 5%;
+  }
+}
+@media (min-width: 768px) {
+  .header_desktop_menu ul {
+    display: none;
+  }
+
+  .header_burguer img {
+    display: block;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .header_contenido {
     font-size: 14px;
     color: #13413f;
     padding: 10px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
+  }
+
+  .header_button {
+    margin-top: 10px;
+  }
 }
 
-.buttonuno {
-    background-color: #13413f;
-    color: white;
-    border: none;
-    margin-top: 10%;
-    padding: 15px 24px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.caja1 {
-    font-size: 15px;
-    background-color: #f0ebe5;
-    color: #0c474b;
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-}
-
-.caja2 {
-    font-size: 12px;
-    background-color: #f0ebe5;
-    color: #0c474b;
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-}
-
-.caja3 {
-    font-size: 12px;
-    background-color: #f0ebe5;
-    color: #0c474b;
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-}
-
-.caja4 {
-    font-size: 12px;
-    background-color: #f0ebe5;
-    color: #0c474b;
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-}
-
-.fondonaranja {
-    font-size: 12px;
-    background-color: #ff975a;
-    padding-bottom: 30px;
-    color: white
-}
-
-
-.caja5 {
-    font-size: 12px;
-    background-color: #f0ebe5;
-    color: #0c474b;
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-}
-
-.buttondos {
-    background-color: #13413f;
-    color: white;
-    border: none;
-    margin-top: 10%;
-    padding: 15px 24px;
-    border-radius: 5px;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-
-.fondo {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-.baño {
-    width: 100%;
-    height: 300px;
-    background-image: url('../public/recursos/creando-espacios.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-.footer {
-    background-color: #0c474b;
-    color: #f0ebe5;
-    padding: 20px;
-    width: 100%;
-    height: auto;
+@media (min-width: 1024px) {
+  .header_desktop_menu ul {
+    display: block;
+    color: #13413f;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 30px;
-    box-sizing: border-box;
-}
-
-
-.link1 a {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: #f0ebe5;
-}
-
-.link2 a {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: #f0ebe5;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.uno {
-    color: #f0ebe5;
-
-}
-
-.dos {
-    color: #f0ebe5;
-}
-
-.tres {
-    color: #f0ebe5;
-}
-
-.linkedin {
-    width: 24px;
-    height: 26px;
-    margin: 11px;
-    object-fit: contain;
-
-}
-
-.insta {
-    width: 24px;
-    height: 26px;
-    margin: 11px;
-    object-fit: contain;
-}
-
-.twitter {
-    width: 24px;
-    height: 26px;
-    margin: 11px;
-    object-fit: contain;
-}
-
-.header__list-hidden {
-    color: #0c474b;
-    display: flex;
-    font-size: 30px;
-    margin-top: -300px;
-    margin-left: 80px;
-    gap: 20px;
-    box-sizing: border-box;
-}
-
-/* 
-.contenedor-cajas {
-    display: flex;
-    flex-direction: row;
-}
- */
-
-
-
-@media (max-width: 480px) {
-
-    .header__list-hidden {
-        display: none;
-    }
-
-    /* 
-    .contenedor-cajas {
-        display: none;
-    }
- */
-}
-
-@media (max-width: 768px) {
-
-
-    /* 
-    .header__list-hidden {
-        display: none;
-    }
-
-    .contenedor-cajas {
-        display: flex;
-        flex-direction: row;
-    }
-
-    /* .footer {
-        flex-direction: row; */
-
-}
-
-@media (max-width: 1024px) {
-
-    /*     .logo {
-        margin-left: 700px;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-    } */
-
-
+  }
 }

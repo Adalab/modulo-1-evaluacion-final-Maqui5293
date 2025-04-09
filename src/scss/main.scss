@@ -6,7 +6,7 @@
 
 html {
   font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
   overflow-x: hidden;
 }
@@ -133,6 +133,13 @@ html {
   padding: 20px;
 }
 
+.contenedormediaquerys {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
 .contenedor_naranja {
   background-color: #ff975a;
   padding: 20px;
@@ -193,6 +200,9 @@ html {
 
 .footer {
   background-color: #0c474b;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .bloque1 {
@@ -203,9 +213,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   gap: 30px;
+  text-align: center;
   box-sizing: border-box;
 }
 
@@ -276,7 +285,7 @@ html {
   object-fit: contain;
 }
 
-@media (max-width: 420px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .header_desktop_menu ul {
     display: none;
   }
@@ -290,7 +299,15 @@ html {
     max-width: 60%;
     margin-left: 5%;
   }
+  .contenedormediaquerys {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    display: block;
+  }
 }
+
 @media (min-width: 768px) {
   .cabecera {
     padding: 70px;
@@ -327,6 +344,16 @@ html {
   .header_button {
     margin-top: 10px;
   }
+  .contendormediaquerys {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -350,5 +377,29 @@ html {
 
   .nav {
     flex-direction: row-reverse;
+  }
+
+  .contendormediaquerys {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .contenedor_caja6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .caja6 {
+    width: 50%;
+    padding-right: 50px;
+  }
+  .baño {
+    width: 50%;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
